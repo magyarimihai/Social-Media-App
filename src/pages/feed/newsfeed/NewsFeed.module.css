@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 40vw;
+}
+.mainContent a:hover {
+  border: none;
+  background-color: transparent;
+}
+.mainContent .profileImage {
+  width: 3rem;
+  border-radius: 50%;
+}
+.mainContent .post {
+  margin: 2.3rem 0 0 0;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+.mainContent .post .postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.mainContent .post .postHeader .profileUserInfo {
+  display: flex;
+  align-items: center;
+}
+.mainContent .post .postHeader .profileUserInfo .profileName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+.mainContent .post .postHeader .profileUserInfo .profileName span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.mainContent .post .postHeader .profileOptions {
+  display: flex;
+  gap: 1rem;
+  margin-top: -2rem;
+}
+.mainContent .post .postHeader .profileOptions a {
+  cursor: pointer;
+}
+.mainContent .post .postHeader .profileOptions img {
+  height: 1.5rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #CAE9FF;
+}
+.mainContent .post .postHeader .profileOptions img:hover {
+  background-color: #FFE74C;
+}
+.mainContent .post .content {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .post .content .imgContent {
+  max-width: 100%;
+}
+.mainContent .post .content .postDescription {
+  margin-bottom: 0.5rem;
+}
+.mainContent .post .reacts {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent .post .reacts .likesInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent .post .reacts .likesInfo img {
+  height: 2rem;
+  margin-right: -0.7rem;
+}
+.mainContent .post .reacts .likesInfo span {
+  margin-left: 1rem;
+}
+.mainContent .post .reacts .commentsInfo {
+  display: flex;
+  gap: 0.7rem;
+}
+.mainContent .post .reactsActions .actions {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent .post .reactsActions .actions .reaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mainContent .post .reactsActions .actions .reaction img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #CAE9FF;
+}
+.mainContent .post .reactsActions .actions .reaction img.liked {
+  background-color: #FFE74C;
+}
+.mainContent .post .reactsActions .actions .reaction img:hover {
+  background-color: #FFE74C;
+}
+.mainContent .post .reactsActions .actions .reaction span {
+  margin-left: 0.5rem;
+}
+.mainContent .post .reactsActions .actions .reaction:hover {
+  color: #5FA8D3;
+}
+.mainContent .post .commentSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+.mainContent .post .commentSection .newCommentField {
+  width: 80%;
+  height: 5.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #CAE9FF;
+  cursor: pointer;
+  border: none;
+}
+.mainContent .post .commentSection .newCommentField::-moz-placeholder {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mainContent .post .commentSection .newCommentField::placeholder {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mainContent .post .commentSection .newCommentField:hover {
+  background-color: #5FA8D3;
+}
+.mainContent .post .commentSection .newCommentField:focus {
+  outline-color: black;
+}
+.mainContent .post .commentSection .insertCommentButton {
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #CAE9FF;
+}
+.mainContent .post .commentSection .insertCommentButton:hover {
+  background-color: #FFE74C;
+  cursor: pointer;
+}
+.mainContent .post .commentSection .insertComm {
+  background-color: transparent;
+  border: none;
+}
+.mainContent .post .userComments {
+  margin-bottom: 0.5rem;
+}
+.mainContent .post .userComments .userCommentsContent {
+  display: flex;
+  margin-left: 1rem;
+}
+.mainContent .post .userComments .userCommentText {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #CAE9FF;
+  position: relative;
+  width: 35rem;
+}
+.mainContent .post .userComments .userCommentText span.commentUserName {
+  font-weight: bold;
+}
+.mainContent .post .userComments .userCommentText p {
+  margin: 0 0 0.8rem 0;
+}
+.mainContent .post .userComments .userCommentText .emojiReaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.mainContent .post .userComments .userCommentText .emojiReaction span {
+  margin-right: 0.5rem;
+}
+.mainContent .post .userComments .userCommentText .emojiReaction img {
+  width: 2rem;
+  margin-left: -0.6rem;
+}
+.mainContent .post .userComments .userCommentText .emojiReaction img.laughEmoji {
+  width: 1.7rem;
+}
+.mainContent .post .userComments .commentReaction {
+  position: relative;
+  width: 35rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 0.5rem;
+  color: #1B4965;
+  padding-left: 0.3rem;
+}
+.mainContent .post .userComments .commentReaction:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 1420px) and (min-width: 1240px) {
+  .mainContent .post {
+    width: 40rem;
+  }
+}
+@media (max-width: 1240px) and (min-width: 1101px) {
+  .mainContent .post {
+    width: 38rem;
+  }
+}
+@media (max-width: 1100px) {
+  .mainContent {
+    justify-content: flex-start;
+  }
+  .mainContent .post {
+    align-self: flex-start;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 920px) {
+  .mainContent {
+    display: flex;
+    justify-content: center;
+  }
+  .mainContent .post {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .mainContent {
+    padding: 2.2rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .mainContent .post {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=NewsFeed.module.css.map */

@@ -1,0 +1,234 @@
+.leftContent {
+  top: 3rem;
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  background-color: #CAE9FF;
+}
+.leftContent a {
+  color: black;
+  display: inline-block;
+}
+.leftContent a:hover {
+  background-color: transparent;
+  border: none;
+}
+.leftContent .quickAccess {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.leftContent .quickAccess .myProfile {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+.leftContent .quickAccess .myProfile .myPic img {
+  height: 3rem;
+  border-radius: 50%;
+}
+.leftContent .quickAccess .myProfile span {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.leftContent .quickAccess .myProfile .profileButtons {
+  display: flex;
+  margin-left: 1.5rem;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.leftContent .quickAccess .myProfile .profileButtons a {
+  border-radius: 50%;
+}
+.leftContent .quickAccess .myProfile .profileButtons a:hover {
+  background-color: #FFE74C;
+}
+.leftContent .quickAccess .myProfile .profileButtons button.logOutButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.leftContent .quickAccess .myProfile .profileButtons button.logOutButton:hover {
+  background-color: #FFE74C;
+  border-radius: 50%;
+}
+.leftContent .quickAccess .myProfile .profileButtons .switchAcc {
+  position: absolute;
+  top: 3rem;
+  margin-left: 16.5rem;
+  flex-direction: column;
+}
+.leftContent .quickAccess .myProfile .profileButtons .switchAcc button {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: -0.2rem 0.2rem 0.5rem black;
+}
+.leftContent .quickAccess .myProfile .profileButtons .switchAcc button:hover {
+  background-color: #5fa8d3;
+}
+.leftContent .quickAccess .myProfile .profileButtons .switchAcc button span {
+  color: black;
+  font-weight: normal;
+  justify-content: center;
+}
+.leftContent .quickAccess .myProfile .profileButtons .switchAcc img {
+  height: 2rem;
+  border-radius: 50%;
+}
+.leftContent .quickAccess .myProfile .profileButtons .buttonImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+.leftContent .quickAccess .quickAccessLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  width: 17rem;
+}
+.leftContent .quickAccess .quickAccessLinks:hover {
+  background-color: #FFE74C;
+  border-radius: 2rem;
+}
+.leftContent .quickAccess .quickAccessLinks img {
+  height: 2.5rem;
+}
+.leftContent .quickAccess .chooseMode {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.leftContent .quickAccess .chooseMode .colorBtn {
+  background-color: transparent;
+  border: none;
+  height: 2.5rem;
+  font-size: medium;
+}
+.leftContent .quickAccess .chooseMode .colorBtn:hover {
+  cursor: pointer;
+  background-color: #FFE74C;
+  border-radius: 2rem;
+}
+.leftContent .quickAccess .chooseMode .modeMenu {
+  flex-direction: column;
+  margin-left: 16rem;
+  position: absolute;
+}
+.leftContent .quickAccess .chooseMode .modeMenu button {
+  width: 10rem;
+  height: 3.5rem;
+  text-align: center;
+  text-justify: center;
+  box-shadow: -0.2rem 0.2rem 0.5rem black;
+  border-radius: 0.5rem;
+}
+.leftContent .quickAccess .chooseMode .modeMenu button:hover {
+  cursor: pointer;
+  background-color: #5fa8d3;
+}
+.leftContent .quickAccess .chooseMode .modeMenu button span {
+  color: black;
+}
+.leftContent .quickAccess .chooseMode .modeMenu img {
+  height: 2.5rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #cae9ff;
+}
+.leftContent footer {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  padding: 5rem 0.4rem 0 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 1540px) {
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc {
+    margin-left: 14rem;
+  }
+  .leftContent .quickAccess .chooseMode .modeMenu {
+    margin-left: 14rem;
+  }
+}
+@media (max-width: 1480px) {
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc {
+    margin-left: 10rem;
+  }
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc button {
+    width: 6rem;
+    height: 5rem;
+  }
+  .leftContent .quickAccess .chooseMode .modeMenu {
+    margin-left: 13rem;
+    bottom: 3.5rem;
+  }
+  .leftContent .quickAccess .chooseMode .modeMenu button {
+    width: 5rem;
+    height: 6rem;
+  }
+}
+@media (max-width: 1420px) {
+  .leftContent .quickAccess .myProfile {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .leftContent .quickAccess .myProfile .myPic {
+    display: flex;
+    justify-content: center;
+  }
+  .leftContent .quickAccess .myProfile span {
+    display: flex;
+    justify-content: center;
+  }
+  .leftContent .quickAccess .myProfile .profileButtons {
+    justify-content: center;
+  }
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc {
+    margin-left: 18rem;
+  }
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc button {
+    width: 6rem;
+    height: 5rem;
+  }
+  .leftContent .quickAccess .chooseMode {
+    border-bottom: none;
+  }
+  .leftContent footer {
+    display: none;
+  }
+}
+@media (max-width: 1240px) {
+  .leftContent .quickAccess .myProfile .profileButtons .switchAcc {
+    margin-left: 12rem;
+  }
+  .leftContent .quickAccess .chooseMode .modeMenu {
+    margin-left: 9rem;
+  }
+}
+@media (max-width: 1100px) {
+  .leftContent {
+    display: none;
+  }
+}/*# sourceMappingURL=LeftSide.module.css.map */

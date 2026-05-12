@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #5FA8D3;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  background-color: transparent;
+  border: none;
+}
+header .navigation {
+  display: flex;
+}
+header .navigation :global(.active) {
+  background-color: #FFE74C;
+}
+header .navigation li > a {
+  border-radius: 50%;
+  background-color: #CAE9FF;
+  margin: 0 0.5rem;
+  margin-left: 1rem;
+  display: flex;
+  height: 3rem;
+  padding: 0.3rem;
+}
+header .navigation li > a:hover {
+  background-color: #FFE74C;
+}
+header .mainSearch {
+  display: flex;
+  align-items: center;
+}
+header .mainSearch .logo {
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+}
+header .mainSearch span {
+  color: black;
+  position: absolute;
+  left: 39rem;
+}
+header .mainSearch .searchInput {
+  height: 2.5rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  text-align: center;
+  /* background-color: #FFE74C; */
+  background-color: #CAE9FF;
+  border-color: black;
+  color: black;
+}
+header .mainSearch .searchInput::-moz-placeholder {
+  color: black;
+}
+header .mainSearch .searchInput::placeholder {
+  color: black;
+}
+header .mainSearch .searchInput:focus {
+  border: 0.2rem solid #CAE9FF;
+}
+header .mainSearch .smallScreenSearch {
+  display: none;
+}
+header .links {
+  display: flex;
+  cursor: pointer;
+}
+header .links li > a {
+  border-radius: 50%;
+  background-color: #CAE9FF;
+  margin: 0 0.5rem;
+  margin-right: 2rem;
+  display: flex;
+  height: 3rem;
+  padding: 0.3rem;
+}
+header .links li > a:hover {
+  background-color: #FFE74C;
+}
+header .links .bellIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+header .links .bellIcon img {
+  width: 100%;
+}
+header .links .bellIcon span {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+header .links .accountSettings button {
+  border-radius: 50%;
+  background-color: #CAE9FF;
+  margin: 0 0.5rem;
+  margin-right: 1rem;
+  display: flex;
+  height: 3rem;
+  padding: 0.3rem;
+  border: transparent;
+  cursor: pointer;
+}
+header .links .accountSettings button:hover {
+  background-color: #FFE74C;
+}
+header .links .accountSettings .accountSettingsMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 20rem;
+  height: 18rem;
+  background-color: #5FA8D3;
+  padding: 0.5rem;
+  gap: 1rem;
+  border-radius: 0rem 0rem 0rem 0.5rem;
+  box-shadow: -0.2rem 0.2rem 0.5rem black;
+}
+header .links .accountSettings .accountSettingsMenu button {
+  background-color: white;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 95%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .links .accountSettings .accountSettingsMenu button:hover {
+  background-color: #FFE74C;
+}
+header .fileInput {
+  display: none;
+}
+
+@media (max-width: 1420px) {
+  header .links .accountSettings .accountSettingsMenu {
+    width: 14rem;
+    height: 18rem;
+  }
+}
+@media (max-width: 1100px) {
+  header .navigation {
+    display: none;
+  }
+  header .mainSearch {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+  header .mainSearch .searchInput {
+    width: 14rem;
+  }
+  header .links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  header .links .accountSettings .accountSettingsMenu {
+    width: 12rem;
+    height: 18rem;
+  }
+}
+@media (max-width: 640px) {
+  header .mainSearch .logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  header .mainSearch .searchInput {
+    display: none;
+  }
+  header .mainSearch .smallScreenSearch {
+    display: flex;
+  }
+  header .mainSearch .smallScreenSearch img {
+    height: 1.8rem;
+  }
+  header .links .contentBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header .links .bellIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header .links .accountSettings .accountSettingsBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}/*# sourceMappingURL=Navigation.module.css.map */

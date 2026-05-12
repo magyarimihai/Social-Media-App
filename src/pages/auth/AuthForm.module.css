@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+.authContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #62B6CB;
+}
+.authContainer .authLogo {
+  opacity: 65%;
+}
+.authContainer .formContainer {
+  background-color: #1B4965;
+  color: white;
+  width: 30rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 8px black;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.authContainer .formContainer a {
+  text-decoration: none;
+}
+.authContainer .formContainer a:hover {
+  background-color: transparent;
+  border: none;
+}
+.authContainer .formContainer a strong {
+  color: #FFE74C;
+}
+.authContainer .formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.authContainer .formContainer form .formField {
+  margin-bottom: 0.5rem;
+}
+.authContainer .formContainer form .formField input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #CAE9FF;
+  color: black;
+  border-radius: 2rem;
+  border: 1px solid white;
+  font-size: 1.3rem;
+}
+.authContainer .formContainer form .formField input::-moz-placeholder {
+  text-align: center;
+}
+.authContainer .formContainer form .formField input::placeholder {
+  text-align: center;
+}
+.authContainer .formContainer form .formField label {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+.authContainer .formContainer form .formField.rememberUserField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authContainer .formContainer form .formField.rememberUserField input {
+  width: 5%;
+  height: 1.2rem;
+  accent-color: #FFE74C;
+  cursor: pointer;
+}
+.authContainer .formContainer form .formField.rememberUserField label {
+  font-variant: normal;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.authContainer .formContainer form .loginButton {
+  background-color: #069e2f;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  width: 11rem;
+  align-self: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.authContainer .formContainer form .loginButton:hover {
+  background-color: #FFE74C;
+  color: black;
+  font-weight: bold;
+  border: 1px solid;
+}
+.authContainer .formContainer .registerButton {
+  background-color: #62B6CB;
+  border: 1px solid white;
+  padding: 0.3rem 2rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  width: 60%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: large;
+}
+.authContainer .formContainer .registerButton:hover {
+  /* opacity: 0.8; */
+  background-color: #FFE74C;
+}
+.authContainer .formContainer .loginError {
+  color: red;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media (max-width: 1280px) {
+  .authContainer .authLogo img {
+    height: 25rem;
+  }
+  .authContainer .formContainer {
+    width: 28rem;
+    height: 22.5rem;
+  }
+  .authContainer .formContainer h2 {
+    margin-top: 0;
+  }
+  .authContainer .formContainer form .formField input {
+    font-size: 1rem;
+  }
+  .authContainer .formContainer form .loginButton {
+    width: 7rem;
+    font-size: 1rem;
+  }
+  .authContainer .formContainer .registerButton {
+    font-size: medium;
+  }
+}
+@media (max-width: 900px) {
+  .authContainer {
+    flex-direction: column;
+  }
+  .authContainer .authLogo img {
+    height: 20rem;
+  }
+  .authContainer .formContainer {
+    width: 25rem;
+    height: 22.5rem;
+  }
+  .authContainer .formContainer h2 {
+    margin-top: 0;
+  }
+  .authContainer .formContainer form .formField input {
+    font-size: 1rem;
+  }
+  .authContainer .formContainer form .loginButton {
+    width: 7rem;
+    font-size: 1rem;
+  }
+  .authContainer .formContainer .registerButton {
+    font-size: medium;
+  }
+}/*# sourceMappingURL=AuthForm.module.css.map */
