@@ -46,7 +46,7 @@ const RightSide = () => {
 
 
             <div className={style.friendsList}>
-                <a href="#" title="Friends list"><img src="https://cdn-icons-png.flaticon.com/128/3220/3220788.png"
+                <a href="#" title="Friends list"><img src="https://cdn-icons-png.flaticon.com/128/6491/6491235.png"
                     alt="" /></a>
                 <span>Friends</span>
             </div>

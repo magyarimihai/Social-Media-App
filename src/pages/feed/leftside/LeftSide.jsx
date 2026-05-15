@@ -62,12 +62,12 @@ const LeftSide = () => {
 
                     <div className={style.profileButtons}>
                         <NavLink to={'/auth'} className={style.logOutButton} title="Log Out"><img
-                            src="https://cdn-icons-png.flaticon.com/128/10238/10238019.png" alt=""
+                            src="https://cdn-icons-png.flaticon.com/128/4227/4227906.png" alt=""
                             className={style.buttonImg} /></NavLink>
 
 
                         <button className={style.logOutButton} title="Switch Accounts" id="switchBtn"
-                            onClick={toggleSwitchMenu} onBlur={hideSwitchMenu}><img src="https://cdn-icons-png.flaticon.com/128/5247/5247351.png"
+                            onClick={toggleSwitchMenu} onBlur={hideSwitchMenu}><img src="https://cdn-icons-png.flaticon.com/128/8976/8976495.png"
                                 alt="" className={style.buttonImg} /></button>
 
 
@@ -84,19 +84,19 @@ const LeftSide = () => {
 
 
 
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/2273/2273225.png"
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/10691/10691802.png"
                     alt="" />Events</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/10473/10473481.png"
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/6491/6491332.png"
                     alt="" />Memories</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/2377/2377793.png"
-                    alt="" />Videos</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/3208/3208704.png"
-                    alt="" />Saved items</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/5721/5721203.png"
-                    alt="" />Newsletter</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/3408/3408506.png"
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/8976/8976878.png"
+                    alt="" />Reels</a>
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/16090/16090850.png"
+                    alt="" />Saved</a>
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/16090/16090088.png"
+                    alt="" />Marketplace</a>
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/15748/15748415.png"
                     alt="" />Games</a>
-                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/8995/8995625.png"
+                <a href="" className={style.quickAccessLinks}><img src="https://cdn-icons-png.flaticon.com/128/18215/18215705.png"
                     alt="" />Explore</a>
 
 
@@ -104,7 +104,7 @@ const LeftSide = () => {
 
 
                     <button className={`${style.quickAccessLinks} ${style.colorBtn}`} onClick={toggleColorMenu} onBlur={hideColorMenu}>
-                        <ModeNightIcon sx={{ fontSize: 'xx-large' }} /> Choose display mode</button>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3536/3536809.png"/>Mode</button>
 
                     {showColorMenu && (<div className={style.modeMenu}>
                         <button onClick={colorModeClicked}><img src="https://cdn-icons-png.flaticon.com/128/439/439842.png" />

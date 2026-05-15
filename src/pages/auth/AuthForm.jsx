@@ -28,14 +28,15 @@ const AuthForm = () => {
     const clearIdPlaceholder = () => {
         if (usernameField.current) {
             usernameField.current.placeholder = '';
-            usernameField.current.style.backgroundColor = 'white';
+            // usernameField.current.style.backgroundColor = 'white';
         }
     }
 
     const defaultIdPlaceholder = () => {
         if (usernameField.current) {
             usernameField.current.placeholder = 'Enter your e-mail';
-            usernameField.current.style.backgroundColor = '#CAE9FF';
+            // usernameField.current.style.backgroundColor = '#CAE9FF';
+            usernameField.current.style.backgroundColor ='white';
         }
 
     }
@@ -44,14 +45,15 @@ const AuthForm = () => {
     const clearPassPlaceholder = () => {
         if (passwordField.current) {
             passwordField.current.placeholder = '';
-            passwordField.current.style.backgroundColor = 'white';
+            // passwordField.current.style.backgroundColor = 'white';
         }
     }
 
     const defaultPassPlaceholder = () => {
         if (passwordField.current) {
             passwordField.current.placeholder = 'Enter your password';
-            passwordField.current.style.backgroundColor = '#CAE9FF';
+            // passwordField.current.style.backgroundColor = '#CAE9FF';
+            passwordField.current.style.backgroundColor = 'white';
         }
 
     }
@@ -127,12 +129,12 @@ const AuthForm = () => {
     
     <div className={styles.formContainer}>
 
-        <h2>{isLogin ? 'Login' : 'Register'}</h2>
+        <h3>{isLogin ? 'Login to AttentionSeeker' : 'Register on AttentionSeeker'}</h3>
 
         <form onSubmit={submitHandler} autoComplete='off' noValidate>
             <div className={styles.formField}>
                 {/* <label htmlFor="username">E-mail:</label> */}
-                <input type="text" id="username" value={username} placeholder="Enter your e-mail" className={styles.usernameField}
+                <input type="text" id="username" value={username} placeholder="E-mail" className={styles.usernameField}
                     ref={usernameField}
                     onClick={clearIdPlaceholder} onBlur={defaultIdPlaceholder} required
                     onChange={e => setUsername(e.target.value)} />
@@ -140,7 +142,7 @@ const AuthForm = () => {
 
             <div className={styles.formField}>
                 {/* <label htmlFor="password">Password:</label> */}
-                <input type="password" id="password" placeholder="Enter your password" className={styles.passwordField}
+                <input type="password" id="password" placeholder="Password" className={styles.passwordField}
                     ref={passwordField}
                     onClick={clearPassPlaceholder} onBlur={defaultPassPlaceholder} required
                     onChange={e => setPassword(e.target.value)} />
@@ -154,7 +156,7 @@ const AuthForm = () => {
 
 
 
-            <input type="submit" value={isLogin ? 'Log in' : 'Create'} className={styles.loginButton} />
+            <input type="submit" value={isLogin ? 'Connect' : 'Create'} className={styles.loginButton} />
 
             {showFieldError && (<p className={styles.loginError} >Please fill in all fields!</p>)}
 
@@ -164,7 +166,7 @@ const AuthForm = () => {
 
         <hr />
 
-        <button className={styles.registerButton} onClick={toggleAuthState} >{isLogin ? 'Create an account' : 'Switch to login'}</button>
+        <button className={styles.registerButton} onClick={toggleAuthState} >{isLogin ? 'Create an account' : 'Go to login'}</button>
 
 
     </div>
