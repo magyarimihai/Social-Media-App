@@ -29,9 +29,16 @@
 
         .myProfile {
             display: flex;
+            justify-content: space-between;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            margin-left: 1rem;
+            // margin-left: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: lightgray;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
 
 
             .myPic {
@@ -282,7 +289,8 @@
 
             .myProfile {
                 flex-direction: column;
-                margin-left: 0;
+                // margin-left: 0;
+                padding-left: 0;
 
                 .myPic {
                     display: flex;
@@ -292,11 +300,14 @@
                 span {
                     display: flex;
                     justify-content: center;
+                    margin-left: 0;
 
                 }
 
                 .profileButtons {
-                    justify-content: center;
+                    justify-content: space-between;
+                    margin-left: 0;;
+                    
 
                     .switchAcc {
                         margin-left: 18rem;
